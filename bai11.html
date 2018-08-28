@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 11</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let tienluong = prompt("Nhap tien luong moi thang ");
+		let thue = 0;
+		if(tienluong>0&&tienluong<5000000){
+			thue=tienluong*0.05;
+			alert(tienluong+"(vnd/m)=>> Thue cua ban la (5%)"+ thue);
+		}else if(tienluong>=5000000&&tienluong<10000000){
+			thue=tienluong*0.1;
+			alert(tienluong+"(vnd/m)=>> Thue cua ban la (10%)"+ thue);
+		}else if(tienluong>=10000000&&tienluong<50000000){
+			thue=tienluong*0.15;
+			alert(tienluong+"(vnd/m)=>> Thue cua ban la (15%)"+ thue);
+		}else if(tienluong>=5000000&&tienluong<100000000){
+			thue=tienluong*0.2;
+			alert(tienluong+"(vnd/m)=>> Thue cua ban la (20%)"+ thue);
+		}else if(tienluong>=100000000){
+			thue=tienluong*0.25;
+			alert(tienluong+"(vnd/m)=>> Thue cua ban la (25%)"+ thue);
+		}else{
+			alert("So tien ban nhap khong dung");
+		}
+	</script>
+</body>
+</html>

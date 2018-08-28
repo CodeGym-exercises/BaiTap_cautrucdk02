@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bai 7</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    let a = prompt("Nhap vao so a");
+    let b = prompt("Nhap vao so b");
+    let c = prompt("Nhap vao so b");
+    if (a == 0) {
+        if (b == 0) {
+            if (c == 0) {
+                alert("Phuong trinh vo so nghiem: ");
+            } else {
+                alert("Phuong trinh vo nghiem ");
+            }
+        } else {
+            let x = (-c) / b;
+            alert("Nghiem phuong trinh la " + x);
+        }
+    }else{
+    	let x1 = (-b-Math.sqrt(b*b-4*a*c))/(2*a);
+    	let x2 = (-b+Math.sqrt(b*b-4*a*c))/(2*a);
+    	alert("Phuong trinh co nghiem la x1= " + x1 + ", x2 = "+ x2);
+    }
+    </script>
+</body>
+
+</html>
